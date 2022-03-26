@@ -1,12 +1,12 @@
 ---
 layout: common
-permalink: /projects/project-website-template/
+permalink: /
 categories: projects
 ---
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Paper Name</title>
+  <title> Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles</title>
 
 
 <!-- <meta property="og:image" content="images/teaser_fb.jpg"> -->
@@ -85,26 +85,31 @@ hr
 
 
 <div id="primarycontent">
-<center><h1><strong>Paper Name</strong></h1></center>
+<center><h1><strong> Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles</strong></h1></center>
 <center><h2>
-    <a href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://cuijiaxun.github.io/">Jiaxun Cui*</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://web.stanford.edu/~hangqiu/">Hang Qiu*</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.cs.utexas.edu/~dchen/">Dian Chen</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>&nbsp;&nbsp;&nbsp;
     <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
    </h2>
     <center><h2>
         <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://robotics.utexas.edu/">Texas Robotics</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.stanford.edu/">Stanford University</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://ai.sony/">Sony AI</a>&nbsp;&nbsp;&nbsp;
+
     </h2></center>
-      <center><span style="font-size:20px;">Conference Name, Year</span></center>
-<center><h2><a href="">Paper</a> | <a href="">Poster</a> | <a href="./src/bib.txt">Bibtex</a> </h2></center> 
+      <center><span style="font-size:20px;"> CVPR, 2022</span></center>
+<center><h2><a href="">Paper</a> | <a href="">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="./src/bib.txt">Bibtex</a> </h2></center> 
 
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody>
   <tr>
   <!-- For autoplay -->
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/GCfs3DJ4aO4?autoplay=1&mute=1&loop=1"
-  autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<video controls width="360">
+  <source src="./src/example.mp4" type="video/mp4">
+</video> 
   <!-- No autoplay -->
 <!-- <iframe width="560" height="315" -->
 <!--   src="https://www.youtube.com/embed/GCfs3DJ4aO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   -->
@@ -119,7 +124,7 @@ hr
                 <tr>
                     <td>
                       <left>
-					  We present ...
+					  Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations. We introduce \sysname, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.To evaluate our model, we develop \envname, a network-augmented driving simulation framework with example accident-prone scenarios. Our experiments on \envname suggest that our cooperative perception driving models lead to a 40\% improvement in average success rate over egocentric driving models in these challenging driving situations and a 5$\times$ smaller bandwidth requirement than prior work V2VNet.
 </left></td></tr></table>
 </p>
   </div>
@@ -131,7 +136,7 @@ hr
 
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody><tr><td>
-<img src="./src/example.png" width="100"></td>   
+<img src="./src/method.jpg" width="1000"></td>   
   </tr>
   <tr><td>
   Method overview</td></tr>
