@@ -107,9 +107,9 @@ hr
   <tbody>
   <tr>
   <!-- For autoplay -->
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/GCfs3DJ4aO4?autoplay=1&mute=1&loop=1"
-  autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<video controls width="360">
+  <source src="./src/example.mp4" type="video/mp4">
+</video> 
   <!-- No autoplay -->
 <!-- <iframe width="560" height="315" -->
 <!--   src="https://www.youtube.com/embed/GCfs3DJ4aO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   -->
@@ -124,7 +124,7 @@ hr
                 <tr>
                     <td>
                       <left>
-					  We present ...
+					  Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations. We introduce \sysname, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.To evaluate our model, we develop \envname, a network-augmented driving simulation framework with example accident-prone scenarios. Our experiments on \envname suggest that our cooperative perception driving models lead to a 40\% improvement in average success rate over egocentric driving models in these challenging driving situations and a 5$\times$ smaller bandwidth requirement than prior work V2VNet.
 </left></td></tr></table>
 </p>
   </div>
@@ -136,7 +136,7 @@ hr
 
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody><tr><td>
-<img src="./src/example.png" width="100"></td>   
+<img src="./src/method.jpg" width="1000"></td>   
   </tr>
   <tr><td>
   Method overview</td></tr>
