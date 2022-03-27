@@ -104,25 +104,23 @@ hr
 <center><span style="font-size:20px;"> CVPR 2022</span></center>
 <center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
 
-<p>
-</p><table border="0" cellspacing="10" cellpadding="0" align="center"> 
-<tbody>
-<tr>
+<p></p>
+<!--table border="0" cellspacing="10" cellpadding="0" align="center"> <tbody><tr-->
 <!-- For autoplay -->
-<video controls width="360">
+<!--video controls width="360">
 <source src="./src/example.mp4" type="video/mp4">
-</video> 
-</tr>
-</tbody>
-</table>
+</video> </tr></tbody></table-->
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
+<img src="./src/introduction.jpg" width="600"></td></tr>
+</tbody></table>
 
 <p>
-<div width="500"><p>
-<table align=center width=800px>
-<tr>
-<td><left>
-Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations. We introduce \sysname, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.To evaluate our model, we develop \envname, a network-augmented driving simulation framework with example accident-prone scenarios. Our experiments on \envname suggest that our cooperative perception driving models lead to a 40\% improvement in average success rate over egocentric driving models in these challenging driving situations and a 5$\times$ smaller bandwidth requirement than prior work V2VNet.
-</left></td></tr></table>
+<div width="1000"><p>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td><left>
+Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations.
+</left></td></tr></tbody></table>
 </p>
 </div>
 </p>
@@ -131,43 +129,13 @@ Optical sensors and learning algorithms for autonomous vehicles have dramaticall
 
 <h1 align="center">Method Overview</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
-  <tbody><tr><td>
-<img src="./src/method.jpg" width="1000"></td>   
-  </tr>
-  <tr><td>
-  Method overview</td></tr>
-</tbody>
+<tbody><tr><td>
+<img src="./src/method.jpg" width="1000"></td></tr>
+<tr><td><left>
+We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted. It contains a Point encoder to extract critical information locally for sharing, a Representation Aggregator for merging multi-vehicle messages, and a Control Module to reason the joint messages. The message produced by the encoder has 128 keypoint coordinates and their corresponding features. The message is then spatially transformed into the ego frame. The ego vehicle merges received messages and performs max voxel pooling on the joint representation. Finally, the Aggregator synthesizes the joint representation from all the neighbors as well as the ego vehicle itself before sending them to the Control Module to generate control decisions. The numbers in parentheses specify the data dimensions as messages between vehicles via realistic wireless channels. 
+</left>
+</td></tr></tbody>
 </table>
-
-<!-- <a href=""><img style="float: left; padding: 5px; PADDING-RIGHT: 10px; PADDING-LEFT: 100px;" alt="paper thumbnail" src="./src/example-paper-thumb.png" height=220></a> -->
-
-
-<!-- <br> -->
-<!-- <h2>Paper</h2> -->
-<!-- <p><a href="https://arxiv.org/pdf/1907.13098.pdf">arxiv</a>,  2019. </p> -->
-
-
-<!-- <p> -->
-<!-- <h2>Citation</h2> -->
-<!-- <table align=center width=850px> -->
-<!--         <center><h1>Citation</h1></center> -->
-<!--         <tr> -->
-<!--         <pre><code style="display:block; white-space:pre-wrap"> -->
-<!--           @inproceedings{pertsch2020spirl, -->
-<!--             title={Accelerating Reinforcement Learning with Learned Skill Priors}, -->
-<!--             author={Karl Pertsch and Youngwoon Lee and Joseph J. Lim}, -->
-<!--             booktitle={Conference on Robot Learning (CoRL)}, -->
-<!--             year={2020}, -->
-<!--           } -->
-<!--         </code></pre> -->
-<!--           </tr> -->
-<!-- </table> -->
-<!-- <h2>Code & Data</h2> -->
-<!-- <p> code / data / </p> -->
-
-<!-- <br> -->
-
-
 
 <br><br><hr>
 <h1 align="center">HEADLINE 1</h1>
