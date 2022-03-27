@@ -137,70 +137,50 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 </td></tr></tbody>
 </table>
 
-<br><br><hr>
-<h1 align="center">HEADLINE 1</h1>
-<h2 align="center">HEADLINE 2</h2>
-
-<p>
-  </p><table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-<tr>
-  <td> <a> gif </a></td>
-  <td> <a> gif </a></td>
-  <td> <a> gif </a></td>
-  <td> <a> gif </a></td>
-  </tr>
-</tbody>
-</table>
 
 <hr>
 <h1 align="center">Qualitative Results</h1>
-<h2 align="center">(click to view full resolution)</h2>
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody>
-  <tr><td><a> gif </a></td></tr>
-  <tr><td><a> gif </a></td></tr>
-  <tr><td><a> gif </a></td></tr>
-  <tr><td><a> gif </a></td></tr>
-  <tr><td><a> gif </a></td></tr>
+  <tr><td><a> videos </a></td></tr>
 </tbody>
 </table>
 
 <hr>
 <h1 align="center">Quantitative Results</h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
+<img src="./src/quantitative_results.png" width="1000"></td></tr>
+</tbody></table>
+
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody>
   <tr><td><h2 align="center">Description</h2></td></tr>
-  <tr><td><a>Image / Table </a></td></tr>
 </tbody>
 </table>
 
-<hr>
-<h1 align="center">Ablation Study</h1>
-<h2 align="center">Example</h2>
-<p>
-  </p><table border="0" cellspacing="10" cellpadding="0">
-  <tbody>
-  <tr><td>PLACEHOLDER</td></tr>
-  <tr><td>PLACEHOLDER</td></tr>
-</tbody>
-</table>
-
-<br>
-<h2 align="center">Another examples</h2>
-<table border="0" cellspacing="10" cellpadding="0">
-  <tbody>
-  <tr><td>PLACEHOLDER</td></tr>
-  <tr><td>PLACEHOLDER</td></tr>
-</tbody>
-</table>
 
 <hr>
 
+<h1 align="center">Sensitivity Analysis</h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
+<img src="./src/sensitivity.jpg" width="600"></td></tr>
+</tbody></table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td><left>
+We further test Coopernaut under varied traffic densities in the most challenging scenario Left Turn. The figure above shows that our method generalizes to a variable number of traffic densities consistently outperforms the No V2V Sharing baseline. 
+In practice, we observe that No V2V Sharing drives slower in denser traffic, thus able to better respond to emergency situations. In contrast, V2V methods do not improve much in dense traffic, as they tend to be impacted by the increased stochasticity of incoming messages from varying neighbors. Nonetheless, Coopernaut still outperforms the baselines in all traffic densities with at least 30% higher success rates over No V2V Sharing.
+</left>
+</td></tr></tbody>
+</table>
+
+<hr>
 <h1 align="center">Citation</h1>
-<table id="bibtex" align=center width=800px>
+<table id="bibtex" align=center width=1000>
 <tr><td><left>
 <pre><code style="display:block; overflow-x: auto">
 @inproceedings{jiang2022ditto,
@@ -215,11 +195,9 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 
 
 <br><hr>
-<table align=center width=800px>
-                <tr>
-                    <td>
-                      <left>
-                <center><h1>Acknowledgements</h1></center>
+<table align=center width=1000px>
+<tr><td><left>
+<center><h1>Acknowledgements</h1></center>
 We would like to thank
 <!-- The webpage template was borrowed from some <a href="https://nvlabs.github.io/SPADE/">GAN folks</a>. -->
 </left></td></tr></table>
