@@ -86,54 +86,50 @@ hr
 
 <div id="primarycontent">
 <center><h1><strong> Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles</strong></h1></center>
-<center><h2>
-    <a href="https://cuijiaxun.github.io/">Jiaxun Cui*</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://web.stanford.edu/~hangqiu/">Hang Qiu*</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://www.cs.utexas.edu/~dchen/">Dian Chen</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
-   </h2>
-    <center><h2>
-        <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.stanford.edu/">Stanford University</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://ai.sony/">Sony AI</a>&nbsp;&nbsp;&nbsp;
 
-    </h2></center>
-      <center><span style="font-size:20px;"> CVPR, 2022</span></center>
-<center><h2><a href="">Paper</a> | <a href="">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="./src/bib.txt">Bibtex</a> </h2></center> 
+<center><font size="-0.0"><h2>
+    <a href="https://cuijiaxun.github.io/">Jiaxun Cui*<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://web.stanford.edu/~hangqiu/">Hang Qiu*<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.cs.utexas.edu/~dchen/">Dian Chen<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone<sup>1,3</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+   </h2></font>
+
+<center><font size="-1"><h2>
+        <a href="https://www.cs.utexas.edu/"><sup>1</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.stanford.edu/"><sup>2</sup>Stanford University</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://ai.sony/"><sup>3</sup>Sony AI</a>&nbsp;&nbsp;&nbsp;
+
+</h2></font></center>
+<center><span style="font-size:20px;"> CVPR 2022</span></center>
+<center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
 
 <p>
-  </p><table border="0" cellspacing="10" cellpadding="0" align="center"> 
-  <tbody>
-  <tr>
-  <!-- For autoplay -->
+</p><table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody>
+<tr>
+<!-- For autoplay -->
 <video controls width="360">
-  <source src="./src/example.mp4" type="video/mp4">
+<source src="./src/example.mp4" type="video/mp4">
 </video> 
-  <!-- No autoplay -->
-<!-- <iframe width="560" height="315" -->
-<!--   src="https://www.youtube.com/embed/GCfs3DJ4aO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   -->
-
 </tr>
 </tbody>
 </table>
 
 <p>
 <div width="500"><p>
-  <table align=center width=800px>
-                <tr>
-                    <td>
-                      <left>
-					  Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations. We introduce \sysname, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.To evaluate our model, we develop \envname, a network-augmented driving simulation framework with example accident-prone scenarios. Our experiments on \envname suggest that our cooperative perception driving models lead to a 40\% improvement in average success rate over egocentric driving models in these challenging driving situations and a 5$\times$ smaller bandwidth requirement than prior work V2VNet.
+<table align=center width=800px>
+<tr>
+<td><left>
+Optical sensors and learning algorithms for autonomous vehicles have dramatically advanced in the past few years. Nonetheless, the reliability of today's autonomous vehicles is hindered by the limited line-of-sight sensing capability and the brittleness of data-driven methods in handling extreme situations. With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations. We introduce \sysname, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.To evaluate our model, we develop \envname, a network-augmented driving simulation framework with example accident-prone scenarios. Our experiments on \envname suggest that our cooperative perception driving models lead to a 40\% improvement in average success rate over egocentric driving models in these challenging driving situations and a 5$\times$ smaller bandwidth requirement than prior work V2VNet.
 </left></td></tr></table>
 </p>
-  </div>
+</div>
 </p>
 
 <hr>
 
 <h1 align="center">Method Overview</h1>
-
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody><tr><td>
 <img src="./src/method.jpg" width="1000"></td>   
@@ -236,18 +232,18 @@ hr
 <hr>
 
 <h1 align="center">Citation</h1>
-  <table align=center width=800px>
-  <tr>
-        <pre style="width:70%; font-size:10px; text-align:center"><code style="display:block; white-space:pre-wrap;text-align:left;margin-left:5%">
-@article{jiang2021synergies,
-  title={Synergies Between Affordance and Geometry: 6-DoF Grasp Detection via Implicit Representations},
-  author={Jiang, Zhenyu and Zhu, Yifeng and Svetlik, Maxwell and Fang, Kuan and Zhu, Yuke},
-  journal={arXiv preprint arXiv:2104.01542},
-  year={2021}
+<table id="bibtex" align=center width=800px>
+<tr><td><left>
+<pre><code style="display:block; overflow-x: auto">
+@inproceedings{jiang2022ditto,
+   title={Ditto: Building Digital Twins of Articulated Objects from Interaction},
+   author={Jiang, Zhenyu and Hsu, Cheng-Chun and Zhu, Yuke},
+   booktitle={arXiv preprint arXiv:2202.08227},
+   year={2022}
 }
-        </code></pre>
-</tr>
-</table>
+</code></pre>
+</left></td></tr></table>
+
 
 
 <br><hr>
