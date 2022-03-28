@@ -185,7 +185,7 @@ Your browser does not support the video tag.
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody>
-  <tr><td><h2 align="center">
+  <tr><td><left>
 We compare Coopernaut with non-V2V and other V2V
 driving baselines in AutoCastSim scenarios. 
 The evaluation metrics include  success rate (SR), Success weighted by
@@ -211,7 +211,7 @@ The point-based representation learning makes Coopernaut robust to localization 
 The explicit representation of 3D points and their locations, as well as the point sampling module 
 retain a high spatial resolution of the intermediate representations in contrast to the voxel-based feature maps used by Voxel GNN.
 
-</h2></td></tr>
+</left></td></tr>
 </tbody>
 </table>
 
