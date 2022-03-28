@@ -3,6 +3,8 @@ layout: common
 permalink: /
 categories: projects
 ---
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -99,7 +101,6 @@ hr
         <a href="https://www.cs.utexas.edu/"><sup>1</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
         <a href="https://www.stanford.edu/"><sup>2</sup>Stanford University</a>&nbsp;&nbsp;&nbsp;
         <a href="https://ai.sony/"><sup>3</sup>Sony AI</a>&nbsp;&nbsp;&nbsp;
-
 </h2></font></center>
 <center><span style="font-size:20px;"> CVPR 2022</span></center>
 <center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
@@ -127,6 +128,8 @@ Optical sensors and learning algorithms for autonomous vehicles have dramaticall
 
 <hr>
 
+
+<hr>
 <h1 align="center">Method Overview</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td>
@@ -139,15 +142,34 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 
 
 <hr>
+<h1 align="center">AutoCastSim Environment</h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
+<img src="./src/autocastsim.jpg" width="800"></td></tr></tbody></table>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td><left>
+We present AutoCastSim, a simulation framework that offers network-augmented autonomous driving simulation on top of CARLA. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning.
+</left>
+</td></tr></tbody>
+</table>
+
+
+
+<hr>
+
+
 <h1 align="center">Qualitative Results</h1>
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody>
-  <tr><td><a> videos </a></td></tr>
+  <tr><td><a> videos to be added </a></td></tr>
 </tbody>
 </table>
 
+
 <hr>
+
+
 <h1 align="center">Quantitative Results</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td>
@@ -163,6 +185,7 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 
 
 <hr>
+
 
 <h1 align="center">Sensitivity Analysis</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
