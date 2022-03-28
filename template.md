@@ -162,7 +162,7 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 
 <h1 align="center">Qualitative Results</h1>
 <p>
-  </p><table border="0" cellspacing="10" cellpadding="0">
+  </p><table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
   <video muted autoplay loop width="1000" controls>
   <source src="./src/scen10.mov" type="video/mp4">
@@ -197,11 +197,9 @@ including Early Fusion, Voxel GNN, and Coopernaut, have achieved substantially h
 scores and lower collision rates. 
 This result indicates that the V2V communication provides
 critical information about the traffic situation over the ego
-vehicle’s line-of-sight sensing to make more informed driving de-
-cisions. 
-The Early Fusion method improves over the non-
-V2V baseline over 30% in average success rate. However,
-it requires transmitting raw point
+vehicle’s line-of-sight sensing to make more informed driving decisions. 
+The Early Fusion method improves over the non-V2V baseline over 30% in average success rate. 
+However, it requires transmitting raw point
 clouds across vehicles, leading to an unrealistic bandwidth
 requirement of 60Mbps (before data compression).
 In contrast, both VoxelGNN and Coopernaut pre-processes raw sensory data and perform sensory fusion on the representation level, 
