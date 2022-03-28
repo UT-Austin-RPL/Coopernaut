@@ -126,9 +126,7 @@ and the brittleness of data-driven methods in handling extreme situations.
 With recent developments of telecommunication technologies, cooperative perception with vehicle-to-vehicle 
 communications has become a promising paradigm to enhance autonomous driving under dangerous or emergent situations.
 </left></td></tr></tbody></table>
-</div>
 
-<hr>
 
 
 <hr>
@@ -237,12 +235,12 @@ In practice, we observe that No V2V Sharing drives slower in denser traffic, thu
 <tr><td><left>
 <pre><code style="display:block; overflow-x: auto">
 @inproceedings{coopernaut,
- title={Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
-  author={Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
+    title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
+    author = {Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    series={CVPR '22},
-    month     = {June},
-    year      = {2022}
+    series = {CVPR '22},
+    month = {June},
+    year = {2022}
 }
 </code></pre>
 </left></td></tr></table>
