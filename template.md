@@ -162,7 +162,7 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody><tr><td align="center">
-  <video muted autoplay width="800" controls>
+  <video muted autoplay width="1000" controls>
   <source src="./src/scen10.mov" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -222,15 +222,21 @@ In practice, we observe that No V2V Sharing drives slower in denser traffic, thu
 </left></td></tr></table>
 
 
-
+<!--
 <br><hr>
+
 <table align=center width=1000px>
+
 <tr><td><left>
+
 <center><h1>Acknowledgements</h1></center>
+
 We would like to thank
-<!-- The webpage template was borrowed from some <a href="https://nvlabs.github.io/SPADE/">GAN folks</a>. -->
+
 </left></td></tr></table>
+
 <br><br>
+-->
 
 <div style="display:none">
 <!-- GoStats JavaScript Based Code -->
