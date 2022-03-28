@@ -161,8 +161,12 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <h1 align="center">Qualitative Results</h1>
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
-  <tbody>
-  <tr><td><a> videos to be added </a></td></tr>
+  <tbody><tr><td align="center">
+  <video autoplay width="800">
+  <source src="./src/scen10.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</td></tr>
 </tbody>
 </table>
 
@@ -206,11 +210,13 @@ In practice, we observe that No V2V Sharing drives slower in denser traffic, thu
 <table id="bibtex" align=center width=1000>
 <tr><td><left>
 <pre><code style="display:block; overflow-x: auto">
-@inproceedings{jiang2022ditto,
-   title={Ditto: Building Digital Twins of Articulated Objects from Interaction},
-   author={Jiang, Zhenyu and Hsu, Cheng-Chun and Zhu, Yuke},
-   booktitle={arXiv preprint arXiv:2202.08227},
-   year={2022}
+@inproceedings{coopernaut,
+ title={Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
+  author={Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    series={CVPR '22},
+    month     = {June},
+    year      = {2022}
 }
 </code></pre>
 </left></td></tr></table>
