@@ -162,8 +162,8 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0">
   <tbody><tr><td align="center">
-  <video autoplay width="800">
-  <source src="./src/scen10.mp4" type="video/mp4">
+  <video muted autoplay width="800" controls>
+  <source src="./src/scen10.mov" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </td></tr>
