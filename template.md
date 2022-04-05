@@ -111,10 +111,23 @@ hr
 <!--video controls width="360">
 <source src="./src/example.mp4" type="video/mp4">
 </video> </tr></tbody></table-->
+
+<!--
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td>
 <img src="./src/introduction.jpg" width="600"></td></tr>
 </tbody></table>
+-->
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td align="center">
+  <video muted autoplay loop width="1000" controls>
+  <source src="./src/CoopernautIntro.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</td></tr>
+</tbody>
+</table>
 
 <p></p>
 <div width="1000"><p>
