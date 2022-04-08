@@ -246,9 +246,7 @@ In practice, we observe that No V2V Sharing drives slower in denser traffic, thu
 @inproceedings{coopernaut,
     title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
     author = {Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    series = {CVPR '22},
-    month = {June},
+    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year = {2022}
 }
 </code></pre>
