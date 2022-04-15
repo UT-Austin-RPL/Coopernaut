@@ -176,6 +176,28 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <hr>
 <h1 align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
 </h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen6.mov" type="video/mp4">
+</video>
+</td>
+
+<td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen8.mov" type="video/mp4">
+</video>
+</td>
+
+<td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen10.mov" type="video/mp4">
+</video>
+</td>
+</tbody>
+</table>
+
 <table id="dataset" border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
@@ -204,28 +226,6 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
 </ul>
 </left>
 </td></tr></tbody>
-</table>
-<table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-  <td align="center">
-  <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen6.mov" type="video/mp4">
-</video>
-</td>
-
-<td align="center">
-  <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen8.mov" type="video/mp4">
-</video>
-</td>
-
-<td align="center">
-  <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen10.mov" type="video/mp4">
-</video>
-</td>
-</tbody>
-
 </table>
 
 <!--
