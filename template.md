@@ -209,19 +209,19 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
   <tbody>
   <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/scen6.mov" type="video/mp4">
+  <source src="./src/Scen6.mov" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/scen8.mov" type="video/mp4">
+  <source src="./src/Scen8.mov" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/scen10.mov" type="video/mp4">
+  <source src="./src/Scen10.mov" type="video/mp4">
 </video>
 </td>
 </tbody>
