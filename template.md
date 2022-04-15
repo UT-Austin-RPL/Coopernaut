@@ -103,7 +103,7 @@ hr
         <a href="https://ai.sony/"><sup>3</sup>Sony AI</a>&nbsp;&nbsp;&nbsp;
 </h2></font></center>
 <center><span style="font-size:20px;"> CVPR 2022</span></center>
-<center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="https://utexas.box.com/v/coopernaut-dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
+<center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="#dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
 
 <p></p>
 <!--table border="0" cellspacing="10" cellpadding="0" align="center"> <tbody><tr-->
@@ -222,26 +222,22 @@ retain a high spatial resolution of the intermediate representations in contrast
 
 
 <hr>
-
-
-<h1 align="center">Sensitivity Analysis</h1>
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
-<tbody><tr><td>
-<img src="./src/sensitivity.jpg" width="600"></td></tr>
-</tbody></table>
-
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<h1 align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
+</h1>
+<table id="dataset" border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-We further test Coopernaut under varied traffic densities in the most challenging scenario Left Turn. The figure above shows that our method generalizes to a variable number of traffic densities consistently outperforms the No V2V Sharing baseline. 
-In practice, we observe that No V2V Sharing drives slower in denser traffic, thus able to better respond to emergency situations. In contrast, V2V methods do not improve much in dense traffic, as they tend to be impacted by the increased stochasticity of incoming messages from varying neighbors. Nonetheless, Coopernaut still outperforms the baselines in all traffic densities with at least 30% higher success rates over No V2V Sharing.
+We provide a kick-start dataset for the behavior cloning, and you can download the dataset 
+<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public <a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut Repository </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories. 
 </left>
 </td></tr></tbody>
 </table>
+
 
 <hr>
 <h1 align="center">Citation</h1>
 <table id="bibtex" align=center width=1000>
 <tr><td><left>
+If you are interested in citing AutoCastSim or Coopernaut in your work, we encourage you to use the following bibtex:
 <pre><code style="display:block; overflow-x: auto">
 @inproceedings{coopernaut,
     title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
