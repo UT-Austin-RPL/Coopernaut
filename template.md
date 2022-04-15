@@ -201,6 +201,62 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 </td></tr></tbody>
 </table>
 
+
+<hr>
+<h1 align="center">Qualitative Results</h1>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative6-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative8-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative10-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="Scenario 10: Red Light Violation">
+    </div>
+  </div>
+</div>
+<script>showSlides(1)</script>
+
+
+
+
 <hr>
 <h1 align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
 </h1>
@@ -307,55 +363,6 @@ retain a high spatial resolution of the intermediate representations in contrast
 </tbody>
 </table>
 -->
-
-<!-- Container for the image gallery -->
-<div class="container">
-
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
-    <video muted autoplay loop width="1000" controls>
-    <source src="./src/qualitative6-v8.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-    <video muted autoplay loop width="1000" controls>
-    <source src="./src/qualitative8-v8.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
-    <video muted autoplay loop width="1000" controls>
-    <source src="./src/qualitative10-v8.mp4" type="video/mp4">
-    </video>
-  </div>
-
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="Scenario 10: Red Light Violation">
-    </div>
-  </div>
-</div>
 
 <hr>
 <h1 align="center">Citation</h1>
