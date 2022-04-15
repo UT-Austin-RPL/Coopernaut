@@ -258,7 +258,7 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 
 
 <hr>
-<h1 align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
+<h1 id=dataset align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
 </h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody>
@@ -282,7 +282,7 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 </tbody>
 </table>
 
-<table id="dataset" border="0" cellspacing="10" cellpadding="0" align="center"> 
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
 <a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
