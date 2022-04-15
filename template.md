@@ -296,7 +296,7 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
                 <li><b> config.json </b></li> This file contains environment and agent configurations for the trajectory.
                 <li><b> measurements </b></li> The folder is a list of frame-specific meta data in the environment. For example, the ego speed, ego control, ego and other vehicles' locations, and planned trajectories by expert(if any).
                 <li><b> *_RGB </b></li> Bird's Eye View.
-                <li><b> *_LIDAR </b></li> The *.npy files are the ego-centric LiDAR point clouds without any communicated points. <b>Note:</b>, the z-axis of points are flipped when data logging, so please use -z during training.
+                <li><b> *_LIDAR </b></li> The *.npy files are the ego-centric LiDAR point clouds without any communicated points. <b>Note:</b> the z-axis of points are flipped when data logging, so please use -z during training.
                 <li><b> *_FusedLIDAR </b></li> The *.npy files are a list of ego-centric <b>fused</b> LiDAR point clouds by AutoCastSim. We do not provide these data as they are not used by any of our baselines or proposed methods. 
                 </ul></li>
             </ul></li>
