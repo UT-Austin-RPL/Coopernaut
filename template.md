@@ -174,10 +174,8 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 </table>
 
 
-
+<!--
 <hr>
-
-
 <h1 align="center">Qualitative Results</h1>
 <p>
   </p><table border="0" cellspacing="10" cellpadding="0" align="center">
@@ -189,7 +187,18 @@ Your browser does not support the video tag.
 </td></tr>
 </tbody>
 </table>
-
+-->
+<hr>
+<h1 align="center">Qualitative Results</h1>
+<p>
+  </p><table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody><tr><td align="center">
+  <video muted autoplay loop width="1000" controls>
+  <source src="./src/qualitative6-v8.mp4" type="video/mp4">
+</video>
+</td></tr>
+</tbody>
+</table>
 
 <!--
 <hr>
