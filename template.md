@@ -176,19 +176,19 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
   <tbody>
   <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen6.mov" type="video/mp4">
+  <source src="./src/scenario6-v9.mp4" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen8.mov" type="video/mp4">
+  <source src="./src/scenario8-v9.mp4" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
   <video muted autoplay loop width="333" controls>
-  <source src="./src/Scen10.mov" type="video/mp4">
+  <source src="./src/scenario10-v9.mp4" type="video/mp4">
 </video>
 </td>
 </tbody>
@@ -242,10 +242,10 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6: Overtaking">
     </div>
     <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8: Left Turn">
     </div>
     <div class="column">
       <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="Scenario 10: Red Light Violation">
@@ -288,10 +288,10 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
 <a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
 <ul class="dashed">
     <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
-        <li><b> Train </b> <ul>    
-            <li><b> 0 </b> (Trajectory id) </li><ul>
+        <li><b> Train </b> (Train Set)<ul>    
+            <li><b> 0 </b> (Trajectory id) <ul>
                 <li><b> RouteScenario_02022-01-12-23-00-10.txt </b></li> The txt file accompanied with the data is a summary of the agent's performance in the specific trajectory, e.g. RouteCompletion, Collisions, InRoute, Duration, Stagnation(ActorSpeedAboveThreshold).
-                <li><b> episode_00002 </b><ul>
+                <li><b> episode_00000 </b><ul>
                 This folder contains the sensor data and decision data, with the name of them representing the frame id.
                 <li><b> config.json </b></li> This file contains environment and agent configurations for the trajectory.
                 <li><b> measurements </b></li> The folder is a list of frame-specific meta data in the environment. For example, the ego speed, ego control, ego and other vehicles' locations, and planned trajectories by expert(if any).
@@ -299,13 +299,14 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
                 <li><b> *_LIDAR </b></li> The *.npy files are the ego-centric LiDAR point clouds without any communicated points. <b>Note:</b>, the z-axis of points are flipped when data logging, so please use -z during training.
                 <li><b> *_FusedLIDAR </b></li> The *.npy files are a list of ego-centric <b>fused</b> LiDAR point clouds by AutoCastSim. We do not provide these data as they are not used by any of our baselines or proposed methods. 
                 </ul></li>
+            </ul></li>
+
             <li><b> 1 </b></li>
-            <li><b> 2 </b>
+            <li><b> 2 </b></li>
             <li><b> ... </b></li>
-       </ul></li>
-       <li><b> Val </b></li>
         </ul></li>
-     </ul></li>
+        <li><b> Val </b> (Validation Set) </li>
+    </ul></li>
 </ul>
 </left>
 </td></tr></tbody>
