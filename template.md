@@ -77,7 +77,18 @@ hr
     display: block;
     word-wrap: break-word;
 }
+ul {
+  list-style-type: none;
+  /*use padding to move list item from left to right*/
+  padding-left: 2em;
+}
 
+ul li:before {
+  content: "\21B3";
+  position: absolute;
+  /*change margin to move dash around*/
+  margin-left: -1.1em;
+}
 </style>
 
 <meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script src="./src/b5m.js" id="b5mmain" type="text/javascript"></script><script type="text/javascript" async="" src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script></head>
@@ -225,8 +236,30 @@ retain a high spatial resolution of the intermediate representations in contrast
 </h1>
 <table id="dataset" border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-We provide a kick-start dataset for the behavior cloning, and you can download the dataset 
-<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public <a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut Repository </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories. 
+We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
+<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
+<ul class="dashed">
+    <li><b> AutoCast_6 </b><ul>
+        <li><b> Val </b></li>
+        <li><b> Train </b><ul>    
+            The numbers are ids of trajectories 
+            <li><b> 0 </b></li>
+            <li><b> 1 </b></li>
+            <li><b> 2 </b><ul>
+                <li><b> RouteScenario_02022-01-12-23-00-10.txt </b></li> The txt file accompanied with the data is a summary of the agent's performance in the specific trajectory, e.g. RouteCompletion, Collisions, InRoute, Duration, Stagnation(ActorSpeedAboveThreshold).
+                <li><b> episode_00002 </b><ul>
+                This folder contains the sensor data and decision data, with the name of them representing the frame id.
+                <li><b> config.json </b></li> This file contains environment and agent configurations for the trajectory.
+                <li><b> measurements </b></li> The folder is a list of frame-specific meta data in the environment. For example, the ego speed, ego control, ego and other vehicles' locations, and planned trajectories by expert(if any).
+                <li><b> *_RGB </b></li> Bird's Eye View.
+                <li><b> *_LIDAR </b></li> The *.npy files are the ego-centric LiDAR point clouds without any communicated points. <b>Note:</b>, the z-axis of points are flipped when data logging, so please use -z during training.
+                <li><b> *_FusedLIDAR </b></li> The *.npy files are a list of ego-centric <b>fused</b> LiDAR point clouds by AutoCastSim. We do not provide these data as they are not used by any of our baselines or proposed methods. 
+                </ul> </li>
+             </ul></li>
+             <li><b> ... </b></li>
+        </ul></li>    
+    </ul></li>
+</ul>
 </left>
 </td></tr></tbody>
 </table>
