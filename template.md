@@ -23,6 +23,10 @@ categories: projects
 var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
 </script>
 <link media="all" href="./css/glab.css" type="text/css" rel="StyleSheet">
+
+<script src="./src/slideshow.js" type="text/javascript"></script>
+<link media="all" href="./css/slideshow.css" type="text/css" rel="StyleSheet">
+
 <style type="text/css" media="all">
 body {
     font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -164,8 +168,32 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 <hr>
 <h1 align="center">AutoCastSim Environment</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<!--
 <tbody><tr><td>
 <img src="./src/autocastsim.jpg" width="800"></td></tr></tbody></table>
+-->
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+  <td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen6.mov" type="video/mp4">
+</video>
+</td>
+
+<td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen8.mov" type="video/mp4">
+</video>
+</td>
+
+<td align="center">
+  <video muted autoplay loop width="333" controls>
+  <source src="./src/Scen10.mov" type="video/mp4">
+</video>
+</td>
+</tbody>
+</table>
+
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We present AutoCastSim, a simulation framework that offers network-augmented autonomous driving simulation on top of CARLA. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning.
@@ -204,12 +232,8 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
 <a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
 <ul class="dashed">
     <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
-        <li><b> Val </b></li>
-        <li><b> Train </b><ul>    
-            The numbers are ids of trajectories 
-            <li><b> 0 </b></li>
-            <li><b> 1 </b></li>
-            <li><b> 2 </b><ul>
+        <li><b> Train </b> <ul>    
+            <li><b> 0 </b> (Trajectory id) </li><ul>
                 <li><b> RouteScenario_02022-01-12-23-00-10.txt </b></li> The txt file accompanied with the data is a summary of the agent's performance in the specific trajectory, e.g. RouteCompletion, Collisions, InRoute, Duration, Stagnation(ActorSpeedAboveThreshold).
                 <li><b> episode_00002 </b><ul>
                 This folder contains the sensor data and decision data, with the name of them representing the frame id.
@@ -218,11 +242,14 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
                 <li><b> *_RGB </b></li> Bird's Eye View.
                 <li><b> *_LIDAR </b></li> The *.npy files are the ego-centric LiDAR point clouds without any communicated points. <b>Note:</b>, the z-axis of points are flipped when data logging, so please use -z during training.
                 <li><b> *_FusedLIDAR </b></li> The *.npy files are a list of ego-centric <b>fused</b> LiDAR point clouds by AutoCastSim. We do not provide these data as they are not used by any of our baselines or proposed methods. 
-                </ul> </li>
-             </ul></li>
-             <li><b> ... </b></li>
-        </ul></li>    
-    </ul></li>
+                </ul></li>
+            <li><b> 1 </b></li>
+            <li><b> 2 </b>
+            <li><b> ... </b></li>
+       </ul></li>
+       <li><b> Val </b></li>
+        </ul></li>
+     </ul></li>
 </ul>
 </left>
 </td></tr></tbody>
@@ -235,25 +262,12 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
   </p><table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
   <video muted autoplay loop width="1000" controls>
-  <source src="./src/scen10.mov" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</td></tr>
-</tbody>
-</table>
--->
-<hr>
-<h1 align="center">Qualitative Results</h1>
-<p>
-  </p><table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody><tr><td align="center">
-  <video muted autoplay loop width="1000" controls>
   <source src="./src/qualitative6-v8.mp4" type="video/mp4">
 </video>
 </td></tr>
 </tbody>
 </table>
-
+-->
 <!--
 <hr>
 <h1 align="center">Quantitative Results</h1>
@@ -294,7 +308,54 @@ retain a high spatial resolution of the intermediate representations in contrast
 </table>
 -->
 
+<!-- Container for the image gallery -->
+<div class="container">
 
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative6-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative8-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <video muted autoplay loop width="1000" controls>
+    <source src="./src/qualitative10-v8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="Scenario 10: Red Light Violation">
+    </div>
+  </div>
+</div>
 
 <hr>
 <h1 align="center">Citation</h1>
