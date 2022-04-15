@@ -239,7 +239,7 @@ retain a high spatial resolution of the intermediate representations in contrast
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
 <a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
 <ul class="dashed">
-    <li><b> AutoCast_6 </b><ul>
+    <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
         <li><b> Val </b></li>
         <li><b> Train </b><ul>    
             The numbers are ids of trajectories 
