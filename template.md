@@ -159,7 +159,7 @@ Optical sensors and learning algorithms for autonomous vehicles have dramaticall
 <tbody><tr><td>
 <img src="./src/method.jpg" width="1000"></td></tr>
 <tr><td><left>
-We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted. It contains a Point encoder to extract critical information locally for sharing, a Representation Aggregator for merging multi-vehicle messages, and a Control Module to reason the joint messages. The message produced by the encoder has 128 keypoint coordinates and their corresponding features. The message is then spatially transformed into the ego frame. The ego vehicle merges received messages and performs max voxel pooling on the joint representation. Finally, the Aggregator synthesizes the joint representation from all the neighbors as well as the ego vehicle itself before sending them to the Control Module to generate control decisions. The numbers in parentheses specify the data dimensions as messages between vehicles via realistic wireless channels. 
+We introduce Coopernaut, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted. It contains a Point encoder to extract critical information locally for sharing, a Representation Aggregator for merging multi-vehicle messages, and a Control Module to reason the joint messages. The message produced by the encoder has 128 keypoint coordinates and their corresponding features. The message is then spatially transformed into the ego frame. The ego vehicle merges received messages and performs max voxel pooling on the joint representation. Finally, the Aggregator synthesizes the joint representation from all the neighbors as well as the ego vehicle itself before sending them to the Control Module to generate control decisions. The numbers in parentheses specify the data dimensions as messages between vehicles via realistic wireless channels. 
 </left>
 </td></tr></tbody>
 </table>
@@ -195,9 +195,9 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 </td>
 </tr>
 <tr>
-<td align="center">Overtaking</td>
-<td align="center">Left Turn</td>
-<td align="center">Red Light Violation</td>
+<td align="center"><b>Overtaking</b></td>
+<td align="center"><b>Left Turn</b></td>
+<td align="center"><b>Red Light Violation</b></td>
 </tr>
 </tbody>
 </table>
@@ -294,9 +294,9 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 </td>
 </tr>
 <tr>
-<td align="center">Overtaking</td>
-<td align="center">Left Turn</td>
-<td align="center">Red Light Violation</td>
+<td align="center"><b>Overtaking</b></td>
+<td align="center"><b>Left Turn</b></td>
+<td align="center"><b>Red Light Violation</b></td>
 </tr>
 </tbody>
 </table>
@@ -305,6 +305,9 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <tbody><tr><td><left>
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
 <a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Validation set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
+<br>
+Here is a glimpse on the structure of data storage.
+<div style="background-color:#EEF5E9;border:1px solid #CACACA; width:1020px; overflow-x:auto">
 <ul class="dashed">
     <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
         <li><b> Train </b> (Train Set)<ul>    
@@ -327,6 +330,7 @@ We provide a kick-start dataset for the behavior cloning training, and you can d
         <li><b> Val </b> (Validation Set) </li>
     </ul></li>
 </ul>
+</div>
 </left>
 </td></tr></tbody>
 </table>
@@ -386,10 +390,10 @@ retain a high spatial resolution of the intermediate representations in contrast
 
 <hr>
 <h1 id="bibtex" align="center">Citation</h1>
-<table align=center width=1000>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tr><td><left>
 If you are interested in citing AutoCastSim or Coopernaut in your work, we encourage you to use the following bibtex:
-<pre><code style="display:block; overflow-x: auto">@inproceedings{coopernaut,
+<pre><code style="display:block; width:1000px; overflow-x: auto">@inproceedings{coopernaut,
     title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
     author = {Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
     booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
