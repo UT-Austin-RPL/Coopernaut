@@ -167,14 +167,16 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
 
 <hr>
 <h1 align="center">AutoCastSim Environment</h1>
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <!--
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td>
 <img src="./src/autocastsim.jpg" width="800"></td></tr></tbody></table>
 -->
+
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-  <td align="center">
+<tbody>
+<tr>
+<td align="center">
   <video muted autoplay loop width="333" controls>
   <source src="./src/scenario6-v9.mp4" type="video/mp4">
 </video>
@@ -191,6 +193,12 @@ We introduce Coopnaut, an end-to-end point-based model that uses cross-vehicle p
   <source src="./src/scenario10-v9.mp4" type="video/mp4">
 </video>
 </td>
+</tr>
+<tr>
+<td align="center">Overtaking</td>
+<td align="center">Left Turn</td>
+<td align="center">Red Light Violation</td>
+</tr>
 </tbody>
 </table>
 
@@ -206,7 +214,6 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <h1 align="center">Qualitative Results</h1>
 <!-- Container for the image gallery -->
 <div class="container">
-
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 3</div>
@@ -242,13 +249,18 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6: Overtaking">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(1)" alt="<b>Scenario 6: Overtaking.</b>
+      The controlled ego car is going to make lanechange maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggresively and properly yielding to the opposite-going vehicles.">
     </div>
+    
     <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenario 8: Left Turn">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(2)" alt="<b>Scenario 8: Left Turn.</b>
+      The red car is going straight in the opposite direction, occluded behind the orange truck. Our model avoids the collisions by properly yielding to the red car before left turning even with the partially observable situation.">
     </div>
+    
     <div class="column">
-      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="Scenario 10: Red Light Violation">
+      <img class="demo cursor" src="src/introduction.jpg" style="width:100%" onclick="currentSlide(3)" alt="<b>Scenario 10: Red Light Violation.</b>
+      The controlled vehicle is going straight to pass an intersection on green lights. Coopernaut identifies the abnormal behaviors of the collider(red car), and proactively hard brakes to avoid the potential collision.">
     </div>
   </div>
 </div>
@@ -261,8 +273,9 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <h1 id=dataset align="center"> Dataset <a href="https://utexas.box.com/v/coopernaut-dataset"> [Download]</a>
 </h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center">
-  <tbody>
-  <td align="center">
+<tbody>
+<tr>
+<td align="center">
   <video muted autoplay loop width="333" controls>
   <source src="./src/Scen6.mov" type="video/mp4">
 </video>
@@ -279,13 +292,19 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
   <source src="./src/Scen10.mov" type="video/mp4">
 </video>
 </td>
+</tr>
+<tr>
+<td align="center">Overtaking</td>
+<td align="center">Left Turn</td>
+<td align="center">Red Light Violation</td>
+</tr>
 </tbody>
 </table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
-<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Test set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
+<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Validation set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
 <ul class="dashed">
     <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
         <li><b> Train </b> (Train Set)<ul>    
@@ -366,12 +385,11 @@ retain a high spatial resolution of the intermediate representations in contrast
 -->
 
 <hr>
-<h1 align="center">Citation</h1>
-<table id="bibtex" align=center width=1000>
+<h1 id="bibtex" align="center">Citation</h1>
+<table align=center width=1000>
 <tr><td><left>
 If you are interested in citing AutoCastSim or Coopernaut in your work, we encourage you to use the following bibtex:
-<pre><code style="display:block; overflow-x: auto">
-@inproceedings{coopernaut,
+<pre><code style="display:block; overflow-x: auto">@inproceedings{coopernaut,
     title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
     author = {Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
     booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
