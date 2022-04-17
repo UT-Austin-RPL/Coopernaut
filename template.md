@@ -177,19 +177,19 @@ We introduce Coopernaut, an end-to-end point-based model that uses cross-vehicle
 <tbody>
 <tr>
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted autoplay loop width="327" controls>
   <source src="./src/scenario6-v10.mp4" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted autoplay loop width="327" controls>
   <source src="./src/scenario8-v10.mp4" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted autoplay loop width="327" controls>
   <source src="./src/scenario10-v10.mp4" type="video/mp4">
 </video>
 </td>
@@ -213,25 +213,25 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <hr>
 <h1 align="center">Qualitative Results</h1>
 <!-- Container for the image gallery -->
-<div class="container">
+<div class="container" align="center">
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 3</div>
-    <video muted autoplay loop width="1000" controls>
+    <video muted autoplay loop width="1020" controls>
     <source src="./src/qualitative6-v9.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
-    <video muted autoplay loop width="1000" controls>
+    <video muted autoplay loop width="1020" controls>
     <source src="./src/qualitative8-v9.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 3</div>
-    <video muted autoplay loop width="1000" controls>
+    <video muted autoplay loop width="1020" controls>
     <source src="./src/qualitative10-v9.mp4" type="video/mp4">
     </video>
   </div>
@@ -242,12 +242,12 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   <!-- Image text -->
-  <div class="caption-container">
+  <div class="caption-container" style="width:1020">
     <p id="caption"></p>
   </div>
 
   <!-- Thumbnail images -->
-  <div class="row">
+  <div class="row" style="width:1020">
     <div class="column">
       <img class="demo cursor" src="src/thumbnail6-v2.png" style="width:100%" onclick="currentSlide(1)" alt="<b>Scenario 6: Overtaking.</b>
       The controlled ego car is going to make lanechange maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggresively and properly yielding to the opposite-going vehicles.">
