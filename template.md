@@ -208,7 +208,7 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 <h1 align="center">Qualitative Results</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-We provide a qualitative side-to-side comparison between the <b>No V2V Sharing</b> model, which learns control based on the ego lidar view, and <b>Coopernaut</b>, our proposed model that make decisions based on the joint representations of ego perception and neighbor perception. Please click on the thumbnails to switch to a specific scenarios.
+Here, we provide a qualitative side-to-side comparison between the <b>No V2V Sharing</b> model, which learns control based on the ego lidar view, and <b>Coopernaut</b>, our proposed model that makes decisions based on the joint representations of ego perception and neighbors' perception. Please click on the thumbnails to switch to a specific scenario.
 </left></td></tr></tbody>
 </table>
 
