@@ -252,17 +252,17 @@ Here, we provide a qualitative side-to-side comparison between the <b>No V2V Sha
   <div class="row" style="width:1020">
     <div class="column">
       <img class="demo cursor" src="src/thumbnail6-v2.png" style="width:100%" onclick="currentSlide(1)" alt="<b>Scenario 6: Overtaking.</b>
-      The controlled ego car is going to make lanechange maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggresively and properly yielding to the opposite-going vehicles.">
+      The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
     </div>
     
     <div class="column">
       <img class="demo cursor" src="src/thumbnail8-v2.png" style="width:100%" onclick="currentSlide(2)" alt="<b>Scenario 8: Left Turn.</b>
-      The red car is going straight in the opposite direction, occluded behind the orange truck. Our model avoids the collisions by properly yielding to the red car before left turning even with the partially observable situation.">
+      The red car is going straight in the opposite direction, occluded behind the orange truck. Our model avoids the collisions by properly yielding to the red car before left-turning, even with the partially observable situation.">
     </div>
     
     <div class="column">
       <img class="demo cursor" src="src/thumbnail10-v2.png" style="width:100%" onclick="currentSlide(3)" alt="<b>Scenario 10: Red Light Violation.</b>
-      The controlled vehicle is going straight to pass an intersection on green lights. Coopernaut identifies the abnormal behaviors of the collider(red car), and proactively hard brakes to avoid the potential collision.">
+      The controlled vehicle is going straight to pass an intersection on green lights. Coopernaut identifies the abnormal behaviors of the collider(red car) and proactively hard brakes to avoid the potential collision.">
     </div>
   </div>
 </div>
@@ -308,9 +308,9 @@ Here, we provide a qualitative side-to-side comparison between the <b>No V2V Sha
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We provide a kick-start dataset for the behavior cloning training, and you can download the dataset 
-<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train set and a Validation set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them are accident-proning and 9 of them are normal driving trajectories.
+<a href="https://utexas.box.com/v/coopernaut-dataset"> Here </a>. Alternatively, you can collect your own dataset by running data-collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut"> Coopernaut </a>. The kick-start dataset contains 3 scenarios, and each has a Train Set and a Validation Set. The Train set of a scenario typically includes 12 trajectories in total, with 3 of them being accident-prone and 9 of them being normal driving trajectories.
 <br>
-Here is a glimpse on the structure of data storage.
+Here is a glimpse of the structure of data storage.
 <div style="background-color:#EEF5E9;border:1px solid #CACACA; width:1020px; overflow-x:auto">
 <ul class="dashed">
     <li><b> AutoCast_6 </b> The Overtaking Scenario <ul>
@@ -396,7 +396,7 @@ retain a high spatial resolution of the intermediate representations in contrast
 <h1 id="bibtex" align="center">Citation</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tr><td><left>
-If you are interested in citing AutoCastSim or Coopernaut in your work, we encourage you to use the following bibtex:
+If you are interested in citing AutoCastSim or Coopernaut in your work, we encourage you to use the following BibTeX:
 <pre><code style="display:block; width:1000px; overflow-x: auto">@inproceedings{coopernaut,
     title = {Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles},
     author = {Jiaxun Cui and Hang Qiu and Dian Chen and Peter Stone and Yuke Zhu},
