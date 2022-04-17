@@ -167,12 +167,6 @@ We introduce Coopernaut, an end-to-end point-based model that uses cross-vehicle
 
 <hr>
 <h1 align="center">AutoCastSim Environment</h1>
-<!--
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
-<tbody><tr><td>
-<img src="./src/autocastsim.jpg" width="800"></td></tr></tbody></table>
--->
-
 <table border="0" cellspacing="10" cellpadding="0" align="center">
 <tbody>
 <tr>
@@ -212,6 +206,14 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
 
 <hr>
 <h1 align="center">Qualitative Results</h1>
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td><left>
+We provide a qualitative side-to-side comparison between the <b>No V2V Sharing</b> model, which learns control based on the ego lidar view, and <b>Coopernaut</b>, our proposed model that make decisions based on the joint representations of ego perception and neighbor perception. Please click on the thumbnails to switch to a specific scenarios.
+</left></td></tr></tbody>
+</table>
+
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
 <!-- Container for the image gallery -->
 <div class="container" align="center">
   <!-- Full-width images with number text -->
@@ -265,6 +267,8 @@ We present AutoCastSim, a simulation framework that offers network-augmented aut
   </div>
 </div>
 <script>showSlides(1)</script>
+</td></tr></tbody>
+</table>
 
 
 
