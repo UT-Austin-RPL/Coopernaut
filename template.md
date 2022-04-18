@@ -159,7 +159,7 @@ Optical sensors and learning algorithms for autonomous vehicles have dramaticall
 <tbody><tr><td>
 <img src="./src/method.jpg" width="1000"></td></tr>
 <tr><td><left>
-We introduce Coopernaut, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted. It contains a Point encoder to extract critical information locally for sharing, a Representation Aggregator for merging multi-vehicle messages, and a Control Module to reason the joint messages. The message produced by the encoder has 128 keypoint coordinates and their corresponding features. The message is then spatially transformed into the ego frame. The ego vehicle merges received messages and performs max voxel pooling on the joint representation. Finally, the Aggregator synthesizes the joint representation from all the neighbors as well as the ego vehicle itself before sending them to the Control Module to generate control decisions. The numbers in parentheses specify the data dimensions as messages between vehicles via realistic wireless channels. 
+We introduce <b>Coopernaut</b>, an end-to-end point-based model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted. It contains a Point encoder to extract critical information locally for sharing, a Representation Aggregator for merging multi-vehicle messages, and a Control Module to reason the joint messages. The message produced by the encoder has 128 keypoint coordinates and their corresponding features. The message is then spatially transformed into the ego frame. The ego vehicle merges received messages and performs max voxel pooling on the joint representation. Finally, the Aggregator synthesizes the joint representation from all the neighbors as well as the ego vehicle itself before sending them to the Control Module to generate control decisions. The numbers in parentheses specify the data dimensions as messages between vehicles via realistic wireless channels. 
 </left>
 </td></tr></tbody>
 </table>
@@ -198,7 +198,7 @@ We introduce Coopernaut, an end-to-end point-based model that uses cross-vehicle
 
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-We introduce <b>AutoCastSim</b>, a simulation framework that offers network-augmented autonomous driving simulation on top of <a href="https://carla.org/">CARLA</a>. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning. Above shows three example accident-prone scenarios we designed in AutoCastSim as the evaluation benchmark for Coopernaut.
+We developed <b>AutoCastSim</b>, a simulation framework that offers network-augmented autonomous driving simulation on top of <a href="https://carla.org/">CARLA</a>. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning. Above show three example challenging traffic scenarios we designed in AutoCastSim as the evaluation benchmark for Coopernaut. We have made AutoCastSim open-source. You can download this simulation framework from <a href="#">here [TODO: add autocast URL]</a>.
 </left>
 </td></tr></tbody>
 </table>
@@ -208,7 +208,7 @@ We introduce <b>AutoCastSim</b>, a simulation framework that offers network-augm
 <h1 align="center">Qualitative Results</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-Here we provide qualitative side-to-side comparisons between the <b>No V2V Sharing</b> driving model, which makes control actions based solely on the line-of-sight sensing, and <b>Coopernaut</b>, our model that makes decisions based on the augmented field of view from cooperative perception. Please click on the thumbnails to switch to a specific scenario.
+Here we provide qualitative side-to-side comparisons between the <b>No V2V Sharing</b> driving model, which makes driving actions solely based on the line-of-sight sensing, and <b>Coopernaut</b>, our model that makes decisions based on the augmented field of view from cooperative perception. Please click on the thumbnails to switch to a specific scenario.
 </left></td></tr></tbody>
 </table>
 
@@ -274,8 +274,7 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
 
 
 <hr>
-<h1 id=dataset align="center">Driving Dataset</a>
-</h1>
+<h1 id=dataset align="center">Driving Dataset</h1>
 <table border="0" cellspacing="10" cellpadding="0" align="center">
 <tbody>
 <tr>
@@ -308,7 +307,7 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 We provide a driving dataset for imitation learning for our benchmark. You can download the dataset 
-<a href="https://utexas.box.com/v/coopernaut-dataset">Here</a>. Furthermore, you can collect your own dataset by running our data collection scripts provided in the public GitHub repository<a href="https://github.com/UT-Austin-RPL/Coopernaut">Coopernaut</a>. The kick-start dataset consists of 3 scenarios, each of which has a Train Set and a Validation Set. The Train set of a scenario contains on average 12 trajectories in total, with 3 of them being accident-prone and 9 being normal driving trajectories.
+<a href="https://utexas.box.com/v/coopernaut-dataset">here</a>. Furthermore, you can collect your own dataset by running our data collection scripts provided in the public GitHub repository <a href="https://github.com/UT-Austin-RPL/Coopernaut">Coopernaut</a>. The kick-start dataset consists of 3 scenarios, each of which has a Train Set and a Validation Set. The Train set of a scenario contains on average 12 trajectories in total, with 3 of them being accident-prone and 9 being normal driving trajectories.
 <br>
 Here is a glimpse of the structure of data storage.
 <div style="background-color:#EEF5E9;border:1px solid #CACACA; width:1020px; overflow-x:auto">
