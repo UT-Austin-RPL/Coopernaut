@@ -138,7 +138,6 @@ ul li:before {
   <tbody><tr><td align="center">
   <video muted autoplay loop width="1000" controls>
   <source src="./src/CoopernautIntro.mp4" type="video/mp4">
-Your browser does not support the video tag.
 </video>
 </td></tr>
 </tbody>
@@ -279,19 +278,19 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
 <tbody>
 <tr>
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted loop width="333" controls>
   <source src="./src/Scen6.mov" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted loop width="333" controls>
   <source src="./src/Scen8.mov" type="video/mp4">
 </video>
 </td>
 
 <td align="center">
-  <video muted autoplay loop width="333" controls>
+  <video muted loop width="333" controls>
   <source src="./src/Scen10.mov" type="video/mp4">
 </video>
 </td>
