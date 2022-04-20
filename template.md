@@ -215,6 +215,25 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
 <tbody><tr><td>
 <!-- Container for the image gallery -->
 <div class="container" align="center">
+
+  <!-- Thumbnail images -->
+  <div class="row" style="width:1020">
+    <div class="column">
+      <img class="demo cursor" src="src/thumbnail6-v2.png" style="width:100%" onclick="currentSlide(1)" alt="<b>Scenario 6: Overtaking.</b>
+      The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="src/thumbnail8-v2.png" style="width:100%" onclick="currentSlide(2)" alt="<b>Scenario 8: Left Turn.</b>
+      The red car is going straight in the opposite direction, occluded behind the orange truck. Our model avoids the collisions by properly yielding to the red car before left-turning, even with the partially observable situation.">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="src/thumbnail10-v2.png" style="width:100%" onclick="currentSlide(3)" alt="<b>Scenario 10: Red Light Violation.</b>
+      The controlled vehicle is going straight to pass an intersection on green lights. Coopernaut identifies the abnormal behaviors of the collider(red car) and proactively hard brakes to avoid the potential collision.">
+    </div>
+  </div>
+
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 3</div>
@@ -247,23 +266,6 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
     <p id="caption"></p>
   </div>
 
-  <!-- Thumbnail images -->
-  <div class="row" style="width:1020">
-    <div class="column">
-      <img class="demo cursor" src="src/thumbnail6-v2.png" style="width:100%" onclick="currentSlide(1)" alt="<b>Scenario 6: Overtaking.</b>
-      The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="src/thumbnail8-v2.png" style="width:100%" onclick="currentSlide(2)" alt="<b>Scenario 8: Left Turn.</b>
-      The red car is going straight in the opposite direction, occluded behind the orange truck. Our model avoids the collisions by properly yielding to the red car before left-turning, even with the partially observable situation.">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="src/thumbnail10-v2.png" style="width:100%" onclick="currentSlide(3)" alt="<b>Scenario 10: Red Light Violation.</b>
-      The controlled vehicle is going straight to pass an intersection on green lights. Coopernaut identifies the abnormal behaviors of the collider(red car) and proactively hard brakes to avoid the potential collision.">
-    </div>
-  </div>
 </div>
 <script>showSlides(1)</script>
 </td></tr></tbody>
