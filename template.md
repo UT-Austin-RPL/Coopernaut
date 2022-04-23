@@ -118,7 +118,7 @@ ul li:before {
         <a href="https://ai.sony/"><sup>3</sup>Sony AI</a>&nbsp;&nbsp;&nbsp;
 </h2></font></center>
 <center><span style="font-size:20px;"> CVPR 2022</span></center>
-<center><h2><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="#dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
+<center><h2><a href="src/paper.pdf">Paper</a> | <a href="https://github.com/UT-Austin-RPL/Coopernaut">Code</a> | <a href="#dataset">Dataset</a> | <a href="#bibtex">Bibtex</a> </h2></center> 
 
 <p></p>
 <!--table border="0" cellspacing="10" cellpadding="0" align="center"> <tbody><tr-->
