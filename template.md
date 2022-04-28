@@ -197,7 +197,7 @@ We introduce <b>Coopernaut</b>, an end-to-end point-based model that uses cross-
 
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
-We developed <b>AutoCastSim</b>, a simulation framework that offers network-augmented autonomous driving simulation on top of <a href="https://carla.org/">CARLA</a>. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning. Above show three example challenging traffic scenarios we designed in AutoCastSim as the evaluation benchmark for Coopernaut. We have made AutoCastSim open-source. You can download this simulation framework from <a href="#">here [TODO: add autocast URL]</a>.
+We developed <b>AutoCastSim</b>, a simulation framework that offers network-augmented autonomous driving simulation on top of <a href="https://carla.org/">CARLA</a>. This simulation framework allows custom designs of various traffic scenarios for training and evaluating autonomous driving models. The simulated vehicles can be configured with realistic wireless communications. It also provides a path planning-based oracle expert who has access to privileged environment information to generate action supervision for imitation learning. Above show three example challenging traffic scenarios we designed in AutoCastSim as the evaluation benchmark for Coopernaut. We have made AutoCastSim open-source. You can download this simulation framework <a href="https://github.com/hangqiu/AutoCastSim">here</a>.
 </left>
 </td></tr></tbody>
 </table>
@@ -310,6 +310,8 @@ Here we provide qualitative side-to-side comparisons between the <b>No V2V Shari
 We provide a driving dataset for imitation learning for our benchmark. You can download the dataset 
 <a href="https://utexas.box.com/v/coopernaut-dataset">here</a>. Furthermore, you can collect your own dataset by running our data collection scripts provided in the public GitHub repository <a href="https://github.com/UT-Austin-RPL/Coopernaut">Coopernaut</a>. The kick-start dataset consists of 3 scenarios, each of which has a Train Set and a Validation Set. The Train set of a scenario contains on average 12 trajectories in total, with 3 of them being accident-prone and 9 being normal driving trajectories.
 <br>
+
+<!--
 Here is a glimpse of the structure of data storage.
 <div style="background-color:#EEF5E9;border:1px solid #CACACA; width:1020px; overflow-x:auto">
 <ul class="dashed">
@@ -334,7 +336,7 @@ Here is a glimpse of the structure of data storage.
         <li><b> Val </b> (Validation Set) </li>
     </ul></li>
 </ul>
-</div>
+</div>--!>
 </left>
 </td></tr></tbody>
 </table>
