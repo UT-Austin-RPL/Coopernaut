@@ -30,6 +30,7 @@ or
 source scripts/install-cu113.sh #Requires CUDA11.3
 ```
 If you encounter errors or would like to follow individual steps, please refer to [INSTALL.md](docs/INSTALL.md) for more details.
+
 If the the installation of `mosquitto` failed and you have sudo priority, please try the following command
 ```
 sudo apt-get install mosquitto libopenblas-dev
